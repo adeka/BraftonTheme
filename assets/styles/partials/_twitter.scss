@@ -1,0 +1,35 @@
+@if $twitter == 1 {
+
+/* Twitter
+-------------------------------------------------------------- */
+.tweet {
+	width:100%;
+	margin: 0;
+}
+
+.tweet_list {
+	list-style: none !important;
+	padding-left: 0 !important;
+	 li {
+		border-bottom: $border-thickness solid $border-color;
+		padding-bottom: 15px;
+		margin-bottom: 15px;
+
+		img {
+			max-width: 48px;
+		}
+	}
+
+	&:last-child {
+		border-bottom: none;
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+
+
+	.tweet_avatar {
+		float: left;
+		margin-right: 10px;
+	}
+}
+} /*end twitter if statement*/

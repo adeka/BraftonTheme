@@ -1,0 +1,31 @@
+@import "partials/variables";
+@import "partials/sidebar";
+@import "partials/blog";
+@import "partials/single";
+@import "partials/mixins";
+@import "partials/normalize";
+@import "partials/breadcrumbs";
+@import "partials/general";
+@import "partials/header";
+@import "partials/footer";
+@import "partials/main";
+
+#left {
+  width: 68%;
+  float: left;
+  margin-right: 30px;
+  margin-top: -9px;
+}
+#sidebar {
+  width: 29%;
+  float: right;
+}
+#news {
+	width: $news-width;
+	margin: 0 auto;
+	font-size: $font-size;
+	font-family: $font-family;
+	overflow: $news-overflow;
+	color: $font-color;
+	background-color: $news-background-color;
+}
