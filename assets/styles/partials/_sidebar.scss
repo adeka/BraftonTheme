@@ -1,0 +1,153 @@
+#sidebar{
+  .widget {
+     clear: both;
+
+     ul {
+       list-style: circle;
+       padding-left: 1.5em;
+     }
+
+     p {
+       margin-bottom: 0;
+     }
+   }
+
+   .widget-title {
+     margin-bottom: 15px;
+   }
+
+   .widget_categories .cat-item-1 {
+     display: none;
+   }
+
+   .error404 .widget {
+     width: 28%;
+     margin-right: 15px;
+     float: left;
+     clear: none;
+   }
+
+  .widget_search {
+    label{
+      display: none;
+    }
+    input[type=search] {
+      margin-right: 0;
+    }
+  }
+  .relatedImage{
+  	width:100%;
+  	height: auto;
+  	img{
+  		width:100%;
+  		height: auto;
+  	}
+  }
+  .top{
+  //  background-color: $mainColor;
+    a {
+      color: $light;
+    }
+    h3{
+      margin: 0;
+      padding: .5em;
+    }
+  }
+  .middle{
+    background-color: $mainColor;
+    img{
+      opacity: .3;
+    }
+
+    position:relative;
+    .title{
+      color: $light;
+      position: absolute;
+      top: 0;
+      padding: 1.5em;
+      padding-top:.5em;
+      z-index: 99;
+      font-size: 1.25em;
+    }
+    .frame{
+      width: 88%;
+      height: 77%;
+      background-color: transparent;
+      border: 3px solid $light;
+      z-index: 95;
+      position: absolute;
+      margin:1em;
+      opacity: 0;
+      transition: .3s opacity ease-in-out;
+    }
+  }
+  .middle:hover .frame{
+    opacity: 1;
+  }
+  .bottom{
+    background-color: $mainColor;
+    i, time{
+      color: $light;
+    }
+    padding: .5em;
+    position: relative;
+    bottom: 10px;
+    margin-bottom: .5em;
+
+  }
+
+  .widget_categories, .widget_archive{
+    .widget-title {
+      margin-bottom: 0;
+      width:100%;
+      padding:.5em;
+      color: $light;
+      border: none;
+      background-color: $mainColor;
+      background-size: 23px 17px;
+      background-position-x: 95%;
+      font-size: 22px;
+      position:relative;
+      cursor:pointer;
+    }
+    .widget-title::after{
+      content: "\f078";
+      font-family: FontAwesome;
+      color: $light;
+      position:absolute;
+      top: .5em;
+      right: .5em;
+    }
+
+  }
+
+  .widget ul {
+    margin: 0;
+    padding-left: 0;
+  }
+  .widget ul li{
+    list-style: none;
+    padding: .5em;
+  }
+  .widget ul li:not(:last-child){
+    border-bottom: 1px solid #CCC;
+  }
+
+
+  select {
+    width:100%;
+    padding:.5em;
+    color: $light;
+   -webkit-appearance: none;
+    border: none;
+    background: url(assets/images/chevron-down.png) right no-repeat $mainColor;
+    background-size: 23px 17px;
+    background-position-x: 95%;
+  }
+
+  option{
+    background-color:white;
+    color: black;
+    padding: .25em;
+  }
+}

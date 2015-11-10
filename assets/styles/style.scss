@@ -1,0 +1,56 @@
+@import "partials/variables";
+@import "partials/sidebar";
+@import "partials/blog";
+@import "partials/single";
+@import "partials/mixins";
+@import "partials/normalize";
+@import "partials/breadcrumbs";
+@import "partials/general";
+@import "partials/header";
+@import "partials/footer";
+@import "partials/main";
+
+#left {
+  width: 69%;
+  float: left;
+  margin-right: 10px;
+  margin-top: -9px;
+}
+#sidebar {
+  width: 29%;
+  float: right;
+}
+#news {
+	width: $news-width;
+	margin: 0 auto;
+	font-size: $font-size;
+	font-family: $font-family;
+	overflow: $news-overflow;
+	color: $font-color;
+	background-color: $news-background-color;
+}
+
+
+#news .navigation {
+  padding-bottom: 12px;
+  margin-top: 25px;
+  text-align: center;
+  span {
+    background: #fff;
+    color: $mainColor;
+    border: 2px solid $mainColor;
+    padding: 7px 10px 10px 10px;;
+  }
+  a {
+    background-color: $mainColor;
+    color: #fff;
+    padding: 7px 10px 10px 10px;;
+    border: 2px solid #67bd45;
+  }
+}
+
+
+
+body {
+  margin: 8px;
+}

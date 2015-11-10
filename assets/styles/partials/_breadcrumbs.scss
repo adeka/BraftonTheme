@@ -1,0 +1,59 @@
+.homeCrumb{
+	padding: .35em;
+	color: $light;
+	background-color: $mainColor;
+	float: left;
+	bottom: 8px;
+	position: relative;
+	font-size: 1.1em;
+	margin-right: .4em;
+	border: 3px solid $mainColor;
+	transition: .1s ease-in-out all;
+	cursor:pointer;
+	&:hover{
+		border: 3px solid $mainColor;
+		background-color: $light;
+		color: $mainColor;
+	}
+}
+
+#breadcrumbs{
+	margin-left: .5em;
+}
+#breadcrumbs a:nth-of-type(2){
+	background-color: $gray;
+	padding: .5em;
+	background:
+		linear-gradient(225deg, transparent 15px, $gray 0) top right,
+		linear-gradient(315deg, transparent 15px, $gray 0) bottom right;
+		background-size: 100% 50%;
+		overflow: visible;
+		background-repeat: no-repeat;
+		padding-right:1.5em;
+		padding-left:1em;
+		padding-left:2em;
+		margin-left:-2em;
+}
+
+.archive #breadcrumbs > span > span > a, .single #breadcrumbs > span > span > a, .index #breadcrumbs > span{
+		color: $light;
+		font-weight: bold;
+		background-color: $mainColor;
+		padding: .5em;
+		padding-left: 1em;
+		margin-right:1.5em;
+		position:relative;
+		background: $mainColor;
+		margin-left: 0;
+}
+.archive #breadcrumbs > span > span > a:after, .single #breadcrumbs > span > span > a:after, .index #breadcrumbs > span:after{
+		content:"";
+		position: absolute;
+		right: -5px;
+		top: 2px;
+		border-left: 28px solid transparent;
+		border-bottom: 28px solid transparent;
+		border-top: 28px solid $mainColor;
+		transform: rotate(45deg);
+		margin-left: 0;
+}

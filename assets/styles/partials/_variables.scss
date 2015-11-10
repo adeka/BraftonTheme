@@ -1,0 +1,35 @@
+   //$mainColor : #3399FF; //baby blue
+   $mainColor : rgb(103,189,69);
+   //$mainColor : #FFCC66; //light gold
+   //$mainColor : #CC3300; //rusty
+   //$mainColor : #003366; //navy
+   //$mainColor : #6666FF; //violet
+   //$mainColor : #FF6699; //pimk
+   //$mainColor : #009933; //green
+   $accentColor: black;
+   //#0066FF;
+   $light : white;
+   $dark : #111;
+   $grey : #333;
+   $gray : #EEE;
+   /*Main Colors*/
+   $body-background-color: white;
+   $news-background-color: white;
+   /*Sizing--*/
+   $news-width: 983px;
+   $news-overflow: hidden;
+   /*Font--*/
+   $font-family: 'Rosario', sans-serif;
+   $font-color: #000;
+   //this affects all font sizes globally, since they all use EM, its relative scaling
+   $font-size: 18px;
+   $header-font-family: $font-family;
+   /*Links--*/
+   $link-color: #000;
+   $link-decoration: none;
+   $link-hover-color: $link-color;
+   $link-hover-decoration: underline;
+   /*Borders*/
+   $border-color: black;
+   $border-thickness: 0px; /*use 0px for no border*/
+   $media-queries: 0;

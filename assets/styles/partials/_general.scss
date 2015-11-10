@@ -1,0 +1,72 @@
+html {}
+body {
+	background-color: $body-background-color;
+}
+
+p {
+	line-height: 140%;
+}
+
+hr{
+  width: 94%;
+}
+
+a {
+	color: $link-color;
+	text-decoration: $link-decoration;
+	&:hover {
+		color: $link-hover-color;
+		text-decoration: $link-hover-decoration;
+	}
+}
+
+h1 {
+	font-size: 1.75em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.125em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: $header-font-family;
+
+}
+
+*,
+:before,
+:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}
