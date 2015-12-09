@@ -1,12 +1,12 @@
    //$mainColor : #3399FF; //baby blue
-   $mainColor : rgb(103,189,69);
+   $mainColor : rgb(80,185,72);
    //$mainColor : #FFCC66; //light gold
    //$mainColor : #CC3300; //rusty
    //$mainColor : #003366; //navy
    //$mainColor : #6666FF; //violet
    //$mainColor : #FF6699; //pimk
    //$mainColor : #009933; //green
-   $accentColor: black;
+   $accentColor: rgb(0,69,106);
    //#0066FF;
    $light : white;
    $dark : #111;
@@ -25,7 +25,7 @@
    $font-size: 18px;
    $header-font-family: $font-family;
    /*Links--*/
-   $link-color: #000;
+   $link-color: #333333;
    $link-decoration: none;
    $link-hover-color: $link-color;
    $link-hover-decoration: underline;

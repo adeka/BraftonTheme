@@ -119,6 +119,10 @@ function load_javascript_dependencies() {
 	add_filter('the_excerpt_rss', 'add_thumb_to_RSS');
 	add_filter('the_content_feed', 'add_thumb_to_RSS');
 
+
+
+
+
 	function override_feed_404() {
 		global $wp_query;
 

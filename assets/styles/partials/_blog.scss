@@ -19,6 +19,10 @@
 	.entry-header h2{
 		margin-top: .25em;
 		margin-bottom: .25em;
+    line-height: 32px;
+    a {
+      color: #333333;
+    }
 	}
 
 	.preReadMore{
@@ -41,7 +45,7 @@
 	}
 
 	img{
-    width:100%;
+  /*  width:100%; */
     height: auto;
 	}
 	.author {
@@ -51,7 +55,7 @@
 		font-size: 1em;
 	}
 	span{
-    line-height: .1em;
+  /*  line-height: .1em; */
 	}
 
 	.news-categories {

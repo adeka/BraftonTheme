@@ -1,4 +1,7 @@
 #sidebar{
+  a {
+    color: #333333;
+  }
   .widget {
      clear: both;
 
@@ -150,4 +153,10 @@
     color: black;
     padding: .25em;
   }
+}
+
+
+.archive #news #left h1, .search #news #left h1 {
+  font-size: 37px;
+  line-height: 38px;
 }

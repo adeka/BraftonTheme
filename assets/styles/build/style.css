@@ -4,6 +4,9 @@
 /*Links--*/
 /*Borders*/
 /*use 0px for no border*/
+#sidebar a {
+  color: #333333;
+}
 #sidebar .widget {
   clear: both;
 }
@@ -48,7 +51,7 @@
   padding: .5em;
 }
 #sidebar .middle {
-  background-color: #67bd45;
+  background-color: #50b948;
   position: relative;
 }
 #sidebar .middle img {
@@ -79,7 +82,7 @@
   opacity: 1;
 }
 #sidebar .bottom {
-  background-color: #67bd45;
+  background-color: #50b948;
   padding: .5em;
   position: relative;
   bottom: 10px;
@@ -94,7 +97,7 @@
   padding: .5em;
   color: white;
   border: none;
-  background-color: #67bd45;
+  background-color: #50b948;
   background-size: 23px 17px;
   background-position-x: 95%;
   font-size: 22px;
@@ -126,7 +129,7 @@
   color: white;
   -webkit-appearance: none;
   border: none;
-  background: url(assets/images/chevron-down.png) right no-repeat #67bd45;
+  background: url(assets/images/chevron-down.png) right no-repeat #50b948;
   background-size: 23px 17px;
   background-position-x: 95%;
 }
@@ -134,6 +137,11 @@
   background-color: white;
   color: black;
   padding: .25em;
+}
+
+.archive #news #left h1, .search #news #left h1 {
+  font-size: 37px;
+  line-height: 38px;
 }
 
 .blog .post-categories {
@@ -149,19 +157,23 @@
   list-style: none;
 }
 .blog .post-categories li a {
-  color: #67bd45;
+  color: #50b948;
 }
 .blog .entry-header h2 {
   margin-top: .25em;
   margin-bottom: .25em;
+  line-height: 32px;
+}
+.blog .entry-header h2 a {
+  color: #333333;
 }
 .blog .preReadMore {
   line-height: 2.5em;
 }
 .blog .readMore {
-  border: 4px solid #67bd45;
+  border: 4px solid #50b948;
   padding: .5em;
-  color: #67bd45;
+  color: #50b948;
   -webkit-transition: .1s ease-in-out all;
           transition: .1s ease-in-out all;
   padding-left: .7em;
@@ -172,10 +184,10 @@
 .blog .readMore:hover {
   text-decoration: none;
   color: white;
-  background-color: #67bd45;
+  background-color: #50b948;
 }
 .blog img {
-  width: 100%;
+  /*  width:100%; */
   height: auto;
 }
 .blog .author {
@@ -185,7 +197,7 @@
   font-size: 1em;
 }
 .blog span {
-  line-height: .1em;
+  /*  line-height: .1em; */
 }
 .blog .news-categories {
   overflow: auto;
@@ -208,6 +220,43 @@
   margin-top: 5px;
 }
 
+article .figure {
+  height: 250px;
+  background-position: center center;
+  background-size: cover;
+}
+
+#news .article-left {
+  display: inline-block;
+  width: 40%;
+  position: relative;
+  float: left;
+}
+#news .article-left .star {
+  right: 10px;
+  top: 10px;
+}
+#news .article-left .triangle {
+  right: 0;
+  top: 0;
+}
+#news .article-left .figure {
+  height: 200px;
+}
+
+#news .article-right {
+  display: inline-block;
+  width: 59%;
+  float: left;
+  padding-left: 15px;
+}
+#news .article-right .entry-header h2 {
+  margin-top: 0;
+}
+
+.single #news a {
+  color: #333333;
+}
 .single #news {
   overflow: visible;
   position: relative;
@@ -221,7 +270,7 @@
   font-family: "FontAwesome";
   margin-right: .3em;
   margin-left: .1em;
-  color: #67bd45;
+  color: #50b948;
 }
 .single .post-categories li {
   list-style: none;
@@ -240,6 +289,8 @@
 .single .entry-header h1 {
   margin-top: .1em;
   margin-bottom: .1em;
+  font-size: 33px;
+  line-height: 40px;
 }
 .single .vertical {
   position: absolute;
@@ -698,21 +749,21 @@ th {
 .homeCrumb {
   padding: .35em;
   color: white;
-  background-color: #67bd45;
+  background-color: #50b948;
   float: left;
   bottom: 8px;
   position: relative;
   font-size: 1.1em;
   margin-right: .4em;
-  border: 3px solid #67bd45;
+  border: 3px solid #50b948;
   -webkit-transition: .1s ease-in-out all;
           transition: .1s ease-in-out all;
   cursor: pointer;
 }
 .homeCrumb:hover {
-  border: 3px solid #67bd45;
+  border: 3px solid #50b948;
   background-color: white;
-  color: #67bd45;
+  color: #50b948;
 }
 
 #breadcrumbs {
@@ -736,12 +787,12 @@ th {
 .archive #breadcrumbs > span > span > a, .single #breadcrumbs > span > span > a, .index #breadcrumbs > span {
   color: white;
   font-weight: bold;
-  background-color: #67bd45;
+  background-color: #50b948;
   padding: .5em;
   padding-left: 1em;
   margin-right: 1.5em;
   position: relative;
-  background: #67bd45;
+  background: #50b948;
   margin-left: 0;
 }
 
@@ -752,7 +803,7 @@ th {
   top: 2px;
   border-left: 28px solid transparent;
   border-bottom: 28px solid transparent;
-  border-top: 28px solid #67bd45;
+  border-top: 28px solid #50b948;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -772,16 +823,17 @@ hr {
 }
 
 a {
-  color: #000;
+  color: #333333;
   text-decoration: none;
 }
 a:hover {
-  color: #000;
+  color: #333333;
   text-decoration: underline;
 }
 
 h1 {
-  font-size: 1.75em;
+  font-size: 37px;
+  line-height: 37px;
 }
 
 h2 {
@@ -800,6 +852,10 @@ h1, h2, h3, h4, h5, h6 {
 :before,
 :after {
   box-sizing: border-box;
+}
+
+.blog #news {
+  color: #666666;
 }
 
 blockquote {
@@ -828,12 +884,33 @@ address {
   margin: 0 auto;
 }
 
+@media screen and (max-device-width: 1000px) {
+  #left, #news {
+    width: 100% !important;
+  }
+
+  #sidebar {
+    float: left !important;
+    width: 100% !important;
+    padding: 0 25px !important;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-device-width: 600px) {
+  #news .article-left, #news .article-right {
+    width: 100%;
+  }
+
+  #commentform textarea {
+    width: 100%;
+  }
+}
 /* ==========================================================================
    Header
    ========================================================================== */
 .site-header {
   height: 180px;
-  background-color: #67bd45;
+  background-color: #50b948;
 }
 .site-header .inner {
   width: 983px;
@@ -851,11 +928,2173 @@ address {
   float: left;
 }
 
+#energy-header {
+  width: 983px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-links__links a:hover {
+  color: #1b8dcd;
+  text-decoration: none;
+}
+
+footer-social {
+  border-top: 1px solid #bbbbbb;
+  -o-box-shadow: 0 -3px 5px #bbbbbb;
+  box-shadow: 0 -3px 5px #bbbbbb;
+  clear: both;
+  height: 104px;
+  position: relative;
+}
+
+.no-boxshadow .footer-social:before {
+  background: url("http://www.gexaenergy.com/assets/images/global//backgrounds/footer-social-shadow.png") repeat-x;
+  bottom: 100%;
+  content: "";
+  height: 8px;
+  position: absolute;
+  width: 100%;
+}
+
+.print-body .footer-social {
+  display: none;
+}
+
+@media print {
+  .footer-social {
+    display: none;
+  }
+}
+.footer-social__inner {
+  padding-top: 25px;
+}
+
+.footer-social__bbb-link {
+  float: left;
+}
+
+.footer-social__network-links {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-social__network-links li {
+  display: inline-block;
+  margin: 0;
+}
+
+.footer-social__network-links li + li {
+  margin-left: 25px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-social__network-links {
+    display: block;
+    float: none;
+    text-align: center;
+  }
+}
+.footer-legal {
+  background: #111111 url("http://www.gexaenergy.com/assets/images/global/backgrounds/footer-legal.png") repeat-x top left;
+  clear: both;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 16px;
+  min-height: 56px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-legal {
+    background: #111111 url("http://www.gexaenergy.com/assets/images/global/backgrounds/footer-legal-mobile.png") repeat-x top left;
+    height: 106px;
+  }
+}
+.footer-legal__inner {
+  padding: 12px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-legal__inner {
+    padding: 18px 0 0;
+  }
+}
+.footer-legal__links {
+  float: left;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-legal__links {
+    float: none;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+}
+.footer-legal__links__link {
+  color: #ffffff;
+  margin-right: 16px;
+  text-decoration: underline;
+}
+
+.footer-legal__links__link:hover {
+  color: #1b8dcd;
+}
+
+.footer-legal__links__link--last {
+  margin-right: 0;
+}
+
+.footer-legal__copyright {
+  float: right;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-legal__copyright {
+    float: none;
+    text-align: center;
+  }
+}
+.footer-location {
+  margin: 0 auto;
+  padding: 15px 0;
+  text-align: center;
+  width: 300px;
+}
+
+@media print {
+  .footer-location {
+    display: none !important;
+  }
+}
+.footer-location__link {
+  color: #111111;
+  display: inline-block;
+  font-family: "HelveticaNeueW01-75Bold", Helvetica, sans-serif;
+}
+
+.footer-location__link__icon {
+  display: block;
+  float: left;
+  margin-right: 8px;
+}
+
+.footer-location__link__icon--hover {
+  display: none;
+}
+
+.footer-location__link:hover {
+  color: #065180;
+  text-decoration: none;
+}
+
+.footer-location__link:hover .footer-location__link__icon {
+  display: none;
+}
+
+.footer-location__link:hover .footer-location__link__icon--hover {
+  display: block;
+}
+
+.footer-location__address {
+  display: table;
+  min-height: 31px;
+}
+
+.footer-location__address__wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.footer-location__address__edit {
+  color: #065180;
+  font-family: "HelveticaNeueW01-55Roma", Helvetica, sans-serif;
+  text-decoration: underline;
+}
+
+.footer-location--copy__link:hover {
+  color: #111111;
+}
+
+.footer-location--copy__address__separator {
+  visibility: hidden;
+}
+
+.footer-location--copy__address__edit {
+  visibility: hidden;
+}
+
+.menu--footer {
+  background: url("http://www.gexaenergy.com/assets/images/global/backgrounds/footer-nav.png") repeat-x;
+  border-top: 1px solid #bbbbbb;
+  height: 254px;
+}
+
+.print-body .menu--footer {
+  display: none;
+}
+
+@media print {
+  .menu--footer {
+    display: none;
+  }
+}
+.menu--footer__wrapper {
+  border-top: 1px solid #ffffff;
+}
+
+.menu--footer__inner {
+  margin-top: -1px;
+}
+
+.menu--footer__list {
+  display: table-row;
+  list-style: none;
+  padding: 0;
+}
+
+.menu--footer__list__section {
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #bbbbbb;
+  display: table-cell;
+  height: 255px;
+  margin-top: -1px;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding: 0 31px;
+}
+
+@media screen and (max-width: 979px) and (min-width: 768px) {
+  .menu--footer__list__section {
+    padding: 0 20px;
+  }
+}
+.menu--footer__list__section--first {
+  border-left: none;
+  padding-left: 0;
+}
+
+.menu--footer__list__section--last {
+  border-right: none;
+  padding-right: 0;
+}
+
+.menu--footer__list__section__header {
+  font-family: "Futura W01 Heavy", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 30px 0 15px;
+}
+
+@media screen and (max-width: 979px) and (min-width: 768px) {
+  .menu--footer__list__section__header {
+    font-size: 15px;
+    line-height: 19px;
+    margin-top: 20px;
+  }
+}
+.menu--footer__list__section__header__link {
+  color: #333333;
+}
+
+.menu--footer__list__section__header__link:hover {
+  text-decoration: none;
+}
+
+.menu--footer__list__section__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu--footer__list__section__item {
+  margin: 0;
+  padding: 0;
+}
+
+.menu--footer__list__section__link {
+  color: #333333;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@media screen and (max-width: 979px) and (min-width: 768px) {
+  .menu--footer__list__section__link {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+.header-links {
+  background: #111111 url("http://www.gexaenergy.com/assets/images/global/backgrounds/header-links.png") repeat-x;
+  color: #d4d4d4;
+  font-family: "Futura W01 Medium", sans-serif;
+  font-size: 15px;
+  height: 40px;
+  line-height: 19px;
+}
+
+@media screen and (max-width: 767px) {
+  .header-links {
+    display: none;
+  }
+}
+.print-body .header-links {
+  display: none;
+}
+
+@media print {
+  .header-links {
+    display: none;
+  }
+}
+.header-links--empty {
+  height: 10px;
+}
+
+.header-links__inner {
+  padding-top: 8px;
+}
+
+.header-links__links {
+  margin: 0;
+  text-align: right;
+}
+
+.header-links__item {
+  display: inline;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  margin-top: 0px;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 979px) and (min-width: 768px) {
+  .header-links__item {
+    margin-left: 15px;
+  }
+}
+.header-links__item--phone {
+  display: none;
+  font-family: "Futura W01 Heavy", sans-serif;
+}
+
+@media screen and (max-width: 979px) and (min-width: 768px) {
+  .header-links__item--phone {
+    display: inline-block;
+  }
+}
+.header-links__link {
+  color: #d4d4d4;
+  text-decoration: none;
+}
+
+.no-touch .header-links__link:hover,
+.no-touch .header-links__link:focus,
+.header-links__link--active {
+  text-decoration: none;
+}
+
+.no-touch .header-links__link:hover .header-links__link__text,
+.no-touch .header-links__link:focus .header-links__link__text,
+.header-links__link--active .header-links__link__text {
+  color: #1b8dcd;
+}
+
+.no-touch .header-links__link:hover .header-links__link__icon,
+.no-touch .header-links__link:focus .header-links__link__icon,
+.header-links__link--active .header-links__link__icon {
+  display: none;
+}
+
+.no-touch .header-links__link:hover .header-links__link__icon--hover,
+.no-touch .header-links__link:focus .header-links__link__icon--hover,
+.header-links__link--active .header-links__link__icon--hover {
+  display: inline;
+}
+
+.header-links__link__text {
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 979px) and (min-width: 768px) {
+  .header-links__link__text {
+    display: none;
+  }
+}
+.header-links__link__icon {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.header-links__link__icon--hover {
+  display: none;
+}
+
+.header-mobile-menu {
+  background: #ffffff url("http://www.gexaenergy.com/assets/images/global/backgrounds/header-menu-mobile.png") repeat-x;
+  -o-box-shadow: 0 0 10px #bbbbbb;
+  box-shadow: 0 0 10px #bbbbbb;
+  height: 50px;
+}
+
+.header-mobile-menu__link {
+  background: none;
+  border: none;
+  float: right;
+  margin: 10px 10px 0 0;
+  padding: 0;
+}
+
+@media print {
+  .header-mobile-menu__link {
+    display: none;
+  }
+}
+.header-mobile-menu__logo {
+  margin: 5px 10px;
+}
+
+.header-mobile-menu__logo-link {
+  border-left: 1px solid #bbbbbb;
+  float: left;
+  height: 50px;
+}
+
+.header-mobile-menu__nav-toggle {
+  background: url("http://www.gexaenergy.com/assets/images/global/icons/menu.png") center center no-repeat;
+  border: none;
+  border-right: 1px solid #ffffff;
+  float: left;
+  height: 50px;
+  width: 44px;
+}
+
+.header-mobile-menu__nav-toggle.menu-active {
+  background-color: #ffffff;
+  background-position: center center 1px;
+  border-bottom: 1px solid #ffffff;
+  -o-box-shadow: 0 0 10px #bbbbbb;
+  box-shadow: 0 0 10px #bbbbbb;
+  height: 51px;
+}
+
+.menu--header {
+  background: url("http://www.gexaenergy.com/assets/images/global/backgrounds/header-nav.png") repeat-x;
+}
+
+.has-nav .menu--header {
+  height: 94px;
+}
+
+@media print {
+  .has-nav .menu--header {
+    height: auto;
+  }
+}
+.has-subnav .menu--header {
+  height: 126px;
+}
+
+@media print {
+  .has-subnav .menu--header {
+    height: auto;
+  }
+}
+.menu--header__inner {
+  height: 80px;
+  position: relative;
+  z-index: 10;
+}
+
+.menu--header__link {
+  background: none;
+  border: none;
+  display: block;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 10;
+}
+
+.menu--header__link::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.menu--header__links__item--current .menu--header__link {
+  border-bottom: 1px solid #bbbbbb;
+}
+
+.menu--header__link--first .menu--header__link__text {
+  border-left-color: transparent;
+}
+
+.menu--header__link--last .menu--header__link__text {
+  border-right-color: transparent;
+}
+
+.menu--header__link__text {
+  border-left: 1px solid #bbbbbb;
+  border-right: 1px solid #ffffff;
+  display: inline-block;
+  margin-top: 15px;
+  padding: 15px;
+}
+
+.menu--header__link__text,
+.menu--header__phone {
+  color: #333333;
+  font-family: "Futura W01 Heavy", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-shadow: 0 1px #ffffff;
+}
+
+@media screen and (max-width: 979px) and (min-width: 768px) {
+  .menu--header__link__text,
+  .menu--header__phone {
+    font-size: 17px;
+    line-height: 24px;
+  }
+}
+.menu--header__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu--header__item {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 979px) {
+  .menu--header__item--phone {
+    display: none;
+  }
+}
+.print-body .menu--header__item--phone {
+  display: block;
+}
+
+@media print {
+  .menu--header__item--phone {
+    display: block;
+  }
+}
+.menu--header__links__item {
+  float: left;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu--header__links__item.menu-active .menu--header__link,
+.menu--header__links__item.menu--header__links__item--home .menu--header__link {
+  border-bottom: 1px solid #ffffff;
+}
+
+.menu--header__links__item.menu-active .menu--header__link__text:after,
+.menu--header__links__item.menu--header__links__item--home .menu--header__link__text:after,
+.menu--header__links__item.menu-active .menu--header__link__text:before,
+.menu--header__links__item.menu--header__links__item--home .menu--header__link__text:before {
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+
+.menu--header__links__item.menu-active .menu--header__link__text:after,
+.menu--header__links__item.menu--header__links__item--home .menu--header__link__text:after {
+  -o-box-shadow: 2px 0 7px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 0 7px rgba(0, 0, 0, 0.3);
+  right: -1px;
+}
+
+.menu--header__links__item.menu-active .menu--header__link__text:before,
+.menu--header__links__item.menu--header__links__item--home .menu--header__link__text:before {
+  -o-box-shadow: -2px 0 7px rgba(0, 0, 0, 0.3);
+  box-shadow: -2px 0 7px rgba(0, 0, 0, 0.3);
+  left: -1px;
+}
+
+.menu--header__links__item.menu-active .menu--header__link,
+.menu--header__links__item.menu--header__links__item--current .menu--header__link,
+.menu--header__links__item.menu--header__links__item--home .menu--header__link {
+  background: #ffffff;
+  border-bottom-color: #ffffff;
+  border-left: 1px solid #bbbbbb;
+  border-right: 1px solid #bbbbbb;
+  height: 81px;
+  margin-bottom: -1px;
+  margin-right: -1px;
+  margin-left: -1px;
+  padding: 0 1px;
+}
+
+.menu--header__links__item.menu-active .menu--header__link__text,
+.menu--header__links__item.menu--header__links__item--current .menu--header__link__text,
+.menu--header__links__item.menu--header__links__item--home .menu--header__link__text {
+  border: none;
+  color: #065180;
+}
+
+.menu--header__links__item.menu--header__links__item--home .menu--header__link {
+  background: url("http://www.gexaenergy.com/assets/images/global/backgrounds/header-link-home.png") repeat-x;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+.menu--header__links__item.menu--header__links__item--home + .menu--header__links__item .menu--header__link__text {
+  border-left-color: transparent;
+}
+
+.menu--header__links__item.menu--header__links__item--home.menu-active .menu--header__link {
+  background: #ffffff;
+  border-left-color: #bbbbbb;
+  border-right-color: #bbbbbb;
+}
+
+.print-body .menu--header__links__item {
+  display: none;
+}
+
+@media print {
+  .menu--header__links__item {
+    display: none;
+  }
+}
+.menu--header__links__item--last {
+  float: right;
+}
+
+.menu--header__logo-link {
+  display: block;
+  float: left;
+  height: 100%;
+  margin-right: 52px;
+}
+
+@media screen and (max-width: 979px) and (min-width: 768px) {
+  .menu--header__logo-link {
+    margin-right: 25px;
+  }
+}
+.menu--header__logo {
+  margin-top: 10px;
+}
+
+.menu--header__meganav {
+  left: -99999px;
+  position: absolute;
+}
+
+.menu--header__meganav.menu-active {
+  left: -20px;
+}
+
+.menu--header__meganav--offset-left.menu-active {
+  left: 115px;
+}
+
+@media screen and (max-width: 979px) and (min-width: 768px) {
+  .menu--header__meganav--offset-left.menu-active {
+    left: -20px;
+  }
+}
+.menu--header__meganav--right.menu-active {
+  left: 219px;
+}
+
+@media screen and (max-width: 979px) and (min-width: 768px) {
+  .menu--header__meganav--right.menu-active {
+    left: -20px;
+  }
+}
+.menu--header__meganav__close-button {
+  background: none;
+  border: none;
+  padding: 0;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.menu--header__meganav__cta {
+  float: left;
+  margin-left: 20px;
+  width: 220px;
+}
+
+.menu--header__meganav__inner {
+  background-color: #ffffff;
+  border: 1px solid #bbbbbb;
+  -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  padding: 30px 0;
+  width: 740px;
+}
+
+@media screen and (max-width: 979px) and (min-width: 768px) {
+  .menu--header__meganav__inner {
+    width: 766px;
+  }
+}
+.menu--header__meganav__marketing {
+  float: left;
+  margin-left: 20px;
+  width: 220px;
+}
+
+.menu--header__meganav__marketing__content {
+  font-family: "HelveticaNeueW01-55Roma", Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 15px;
+}
+
+.menu--header__meganav__marketing__header {
+  font-family: "Futura W01 Heavy", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0 0 10px;
+}
+
+.menu--header__meganav__marketing__link {
+  background-image: url("http://www.gexaenergy.com/assets/images/global/icons/arrow-right-blue.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+  font-family: "HelveticaNeueW01-55Roma", Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  padding-right: 12px;
+}
+
+.menu--header__meganav__sublinks {
+  border-left: 1px solid #bbbbbb;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding-left: 20px;
+  position: relative;
+  width: 200px;
+}
+
+.menu--header__meganav__sublinks:before {
+  background-image: -webkit-linear-gradient(to bottom, #ffffff, #bbbbbb 30%, #bbbbbb 70%, #ffffff 100%);
+  background-image: -webkit-linear-gradient(top, #ffffff, #bbbbbb 30%, #bbbbbb 70%, #ffffff 100%);
+  background-image: linear-gradient(to bottom, #ffffff, #bbbbbb 30%, #bbbbbb 70%, #ffffff 100%);
+  content: "";
+  height: 100%;
+  left: -1px;
+  position: absolute;
+  width: 1px;
+}
+
+.menu--header__meganav__sublinks__item {
+  border-top: 1px solid #bbbbbb;
+  margin: 0;
+  padding: 0;
+}
+
+.menu--header__meganav__sublinks__item--first {
+  border-top: none;
+}
+
+.menu--header__meganav__sublink {
+  color: #333333;
+  display: block;
+  font-family: "Futura W01 Medium", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 10px 0;
+}
+
+.menu--header__meganav__sublinks--manage-account .menu--header__meganav__sublink {
+  padding-left: 25px;
+}
+
+.menu--header__meganav__sublink--first {
+  padding-top: 0;
+}
+
+.menu--header__meganav__sublink--make-payment {
+  background: url("http://www.gexaenergy.com/assets/images/global/icons/dollar-sign-small.png") no-repeat left center;
+}
+
+.menu--header__meganav__sublink--order-status {
+  background: url("http://www.gexaenergy.com/assets/images/global/icons/cart-small.png") no-repeat left center;
+}
+
+.menu--header__meganav__sublink--register {
+  background: url("http://www.gexaenergy.com/assets/images/global/icons/user-black-small.png") no-repeat left 4px;
+}
+
+.menu--header__meganav__sublink--renew {
+  background: url("http://www.gexaenergy.com/assets/images/global/icons/refresh-small.png") no-repeat left center;
+}
+
+.menu--header__phone {
+  display: inline-block;
+  float: right;
+  margin-top: 30px;
+}
+
+.menu--header__subnav {
+  background-color: #ffffff;
+  border-bottom: 1px solid #bbbbbb;
+  border-top: 1px solid #bbbbbb;
+  -o-box-shadow: 0 6px 12px -8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 12px -8px rgba(0, 0, 0, 0.3);
+  height: 43px;
+  text-align: center;
+}
+
+.print-body .menu--header__subnav {
+  display: none;
+}
+
+@media print {
+  .menu--header__subnav {
+    display: none;
+  }
+}
+.menu--header__subnav__item {
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  display: inline-block;
+  margin: 0;
+  padding: 0 15px;
+}
+
+.menu--header__subnav__item--dropdown {
+  height: 43px;
+  position: relative;
+}
+
+.menu--header__subnav__item--dropdown.menu-active {
+  border-bottom: 1px solid #ffffff;
+  border-left-color: #bbbbbb;
+  border-right-color: #bbbbbb;
+}
+
+.menu--header__subnav__links,
+.menu--header__subnav__more {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu--header__subnav__link {
+  font-family: "Futura W01 Medium", sans-serif;
+  display: block;
+}
+
+.menu--header__subnav__link,
+.menu--header__subnav__more-btn {
+  color: #333333;
+  font-size: 15px;
+  line-height: 19px;
+  margin-top: 12px;
+  white-space: nowrap;
+}
+
+.menu--header__subnav__link--current {
+  color: #065180;
+  font-family: "Futura W01 Heavy", sans-serif;
+}
+
+.menu--header__subnav__more {
+  background-color: #ffffff;
+  border: 1px solid #bbbbbb;
+  border-top: none;
+  -o-box-shadow: 0 5px 5px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 5px -1px rgba(0, 0, 0, 0.3);
+  display: none;
+  padding: 15px 18px 18px;
+  position: absolute;
+  right: -1px;
+  text-align: left;
+  top: 44px;
+}
+
+.menu--header__subnav__more.menu-active {
+  display: block;
+}
+
+.menu--header__subnav__more-btn {
+  background: url("http://www.gexaenergy.com/assets/images/global/icons/arrow-down-blue.png") no-repeat center right;
+  border: none;
+  font-family: "Futura W01 Heavy", sans-serif;
+  padding: 0 20px 0 0;
+  vertical-align: inherit;
+}
+
+.menu--header__subnav__more__item {
+  margin-top: 15px;
+}
+
+.menu--mobile {
+  -o-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  margin-top: 1px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.menu--mobile,
+.menu--mobile__links--secondary {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .menu--mobile.menu-active,
+  .menu--mobile__links--secondary.menu-active {
+    display: block;
+  }
+}
+.menu--mobile__link {
+  color: #333333;
+  display: block;
+  text-align: left;
+  text-decoration: none;
+}
+
+.menu--mobile__link:active,
+.menu--mobile__link:focus,
+.menu--mobile__link:hover {
+  background-color: #1b8dcd;
+  border-bottom: 1px solid #1b8dcd;
+  border-top: 1px solid #1b8dcd;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.menu--mobile__link--primary {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  border-left: none;
+  border-right: none;
+  border-top: 1px solid #bbbbbb;
+  font-family: "Futura W01 Heavy", sans-serif;
+  font-size: 16px;
+  height: 42px;
+  line-height: 22px;
+  padding-left: 12px;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
+.menu--mobile__link--primary:after {
+  background-image: url("http://www.gexaenergy.com/assets/images/global/icons/arrow-down-blue.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  content: "";
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 22px;
+}
+
+.menu--mobile__link--primary.menu-active {
+  background-color: #1b8dcd;
+  border-bottom: 1px solid #bbbbbb;
+  border-top: 1px solid #bbbbbb;
+  color: #ffffff;
+}
+
+.menu--mobile__link--primary.menu-active:after {
+  background-image: url("http://www.gexaenergy.com/assets/images/global/icons/arrow-up.png");
+}
+
+.menu--mobile__link--primary--first,
+.menu--mobile__link--primary--first.menu-active,
+.menu--mobile__link--secondary--first {
+  border-top-color: transparent;
+}
+
+.menu--mobile__link--secondary {
+  background-color: #e6edf2;
+  border-bottom: 1px solid #bbbbbb;
+  border-top: 1px solid #ffffff;
+  font-family: "Futura W01 Medium", sans-serif;
+  font-size: 14px;
+  height: 34px;
+  line-height: 18px;
+  padding: 9px 0 0 21px;
+}
+
+.menu--mobile__link--secondary--first:before {
+  -o-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.menu--mobile__link--secondary--last {
+  border-bottom: 1px solid #e6edf2;
+}
+
+.menu--mobile__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu--mobile__links--primary {
+  border-bottom: 10px solid #111111;
+}
+
+.menu--mobile__item--primary {
+  margin: 0;
+  padding: 0;
+}
+
+.menu--mobile__links--secondary {
+  position: relative;
+}
+
+.menu--mobile__links--secondary:after {
+  -o-box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.3);
+  content: "";
+  height: 1px;
+  position: absolute;
+  width: 100%;
+}
+
+.menu--mobile__item--secondary {
+  margin: 0;
+  padding: 0;
+}
+
+.header-message {
+  background-color: #111111;
+  color: #ffffff;
+  left: 0;
+  position: relative;
+  width: 100%;
+}
+
+.has-nav .header-message {
+  margin-top: -14px;
+}
+
+@media screen and (max-width: 767px) {
+  .has-nav .header-message {
+    margin-top: 0;
+  }
+}
+.has-subnav .header-message {
+  margin-top: -1px;
+}
+
+@media screen and (max-width: 767px) {
+  .has-subnav .header-message {
+    margin-top: 0;
+  }
+}
+.header-message h1,
+.header-message h2,
+.header-message h3,
+.header-message h4,
+.header-message h5,
+.header-message h6 {
+  color: #ffffff;
+}
+
+.header-message--hidden {
+  height: 50px;
+  width: 50px;
+}
+
+.header-message--hidden * {
+  display: none;
+}
+
+.header-message__inner {
+  *zoom: 1;
+  zoom: 1;
+  margin: 0 auto;
+  padding: 10px 0;
+  width: 940px;
+}
+
+.header-message__inner:before,
+.header-message__inner:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.header-message__inner:after {
+  clear: both;
+}
+
+.header-message__inner:before,
+.header-message__inner:after {
+  content: '';
+  display: table;
+}
+
+.header-message__inner:after {
+  clear: both;
+}
+
+@media screen and (max-width: 979px) and (min-width: 768px) {
+  .header-message__inner {
+    width: 724px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header-message__inner {
+    width: 300px;
+  }
+}
+.header-message__button {
+  background-color: transparent;
+  border: 0;
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+
+.menu--header__meganav__promo-code {
+  float: left;
+  margin-left: 20px;
+  margin-top: 25px;
+}
+
+.menu--header__meganav__promo-code .field__label {
+  display: none;
+}
+
+.menu--header__meganav__promo-code .field__wrapper {
+  margin: 0;
+}
+
+.menu--header__meganav__promo-code .text-btn-group .field--text,
+.menu--header__meganav__promo-code .text-btn-group .field--text__input {
+  margin-right: -2px;
+  width: 185px;
+}
+
+.menu--header__meganav__promo-code .text-btn-group .field--button__input {
+  background-image: url("http://www.gexaenergy.com/assets/images/gexa/input/text-field-promo-code.png");
+  height: 37px;
+  margin-top: 15px;
+  width: 32px;
+}
+
+.menu--header__meganav__promo-code .text-btn-group .field--button__input:hover,
+.menu--header__meganav__promo-code .text-btn-group .field--button__input:focus,
+.menu--header__meganav__promo-code .text-btn-group .field--button__input:active {
+  background-image: url("http://www.gexaenergy.com/assets/images/gexa/input/text-field-promo-code.png");
+}
+
+.menu--header__meganav__promo-code__heading {
+  margin-bottom: 0;
+}
+
+.container {
+  width: 940px;
+  margin-right: auto;
+  margin-left: auto;
+  zoom: 1;
+}
+
+/*!
+ * Bootstrap Responsive v2.3.2
+ *
+ * Copyright 2013 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world by @mdo and @fat.
+ */
+@-ms-viewport {
+  width: device-width;
+}
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+@media (min-width: 980px) {
+  .visible-tablet {
+    display: none !important;
+  }
+
+  .visible-phone {
+    display: none !important;
+  }
+
+  .hidden-desktop {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .visible-desktop {
+    display: none !important;
+  }
+
+  .visible-phone {
+    display: none !important;
+  }
+
+  .hidden-tablet {
+    display: none !important;
+  }
+}
+@media (max-width: 767px) {
+  .visible-desktop {
+    display: none !important;
+  }
+
+  .visible-tablet {
+    display: none !important;
+  }
+
+  .hidden-phone {
+    display: none !important;
+  }
+}
+.visible-print {
+  display: none !important;
+}
+
+@media print {
+  .visible-print {
+    display: inherit !important;
+  }
+
+  .hidden-print {
+    display: none !important;
+  }
+}
+.no-mq .visible-tablet {
+  display: none !important;
+}
+
+.no-mq .visible-phone {
+  display: none !important;
+}
+
+.no-mq .hidden-desktop {
+  display: none !important;
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .row {
+    margin-left: -20px;
+    *zoom: 1;
+    zoom: 1;
+  }
+
+  .row:before,
+  .row:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+
+  .row:after {
+    clear: both;
+  }
+
+  .row:before,
+  .row:after {
+    content: '';
+    display: table;
+  }
+
+  .row:after {
+    clear: both;
+  }
+
+  [class*="span"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 20px;
+  }
+
+  .container,
+  .navbar-static-top .container,
+  .navbar-fixed-top .container,
+  .navbar-fixed-bottom .container {
+    width: 724px;
+  }
+
+  .span12 {
+    width: 724px;
+  }
+
+  .span11 {
+    width: 662px;
+  }
+
+  .span10 {
+    width: 600px;
+  }
+
+  .span9 {
+    width: 538px;
+  }
+
+  .span8 {
+    width: 476px;
+  }
+
+  .span7 {
+    width: 414px;
+  }
+
+  .span6 {
+    width: 352px;
+  }
+
+  .span5 {
+    width: 290px;
+  }
+
+  .span4 {
+    width: 228px;
+  }
+
+  .span3 {
+    width: 166px;
+  }
+
+  .span2 {
+    width: 104px;
+  }
+
+  .span1 {
+    width: 42px;
+  }
+
+  .offset12 {
+    margin-left: 764px;
+  }
+
+  .offset11 {
+    margin-left: 702px;
+  }
+
+  .offset10 {
+    margin-left: 640px;
+  }
+
+  .offset9 {
+    margin-left: 578px;
+  }
+
+  .offset8 {
+    margin-left: 516px;
+  }
+
+  .offset7 {
+    margin-left: 454px;
+  }
+
+  .offset6 {
+    margin-left: 392px;
+  }
+
+  .offset5 {
+    margin-left: 330px;
+  }
+
+  .offset4 {
+    margin-left: 268px;
+  }
+
+  .offset3 {
+    margin-left: 206px;
+  }
+
+  .offset2 {
+    margin-left: 144px;
+  }
+
+  .offset1 {
+    margin-left: 82px;
+  }
+
+  .row-fluid {
+    width: 100%;
+    *zoom: 1;
+    zoom: 1;
+  }
+
+  .row-fluid:before,
+  .row-fluid:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+
+  .row-fluid:after {
+    clear: both;
+  }
+
+  .row-fluid:before,
+  .row-fluid:after {
+    content: '';
+    display: table;
+  }
+
+  .row-fluid:after {
+    clear: both;
+  }
+
+  .row-fluid [class*="span"] {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 2.76243094%;
+    *margin-left: 2.70923945%;
+  }
+
+  .row-fluid [class*="span"]:first-child {
+    margin-left: 0;
+  }
+
+  .row-fluid .controls-row [class*="span"] + [class*="span"] {
+    margin-left: 2.76243094%;
+  }
+
+  .row-fluid .span12 {
+    width: 100%;
+    *width: 99.94680851%;
+  }
+
+  .row-fluid .span11 {
+    width: 91.43646409%;
+    *width: 91.3832726%;
+  }
+
+  .row-fluid .span10 {
+    width: 82.87292818%;
+    *width: 82.81973669%;
+  }
+
+  .row-fluid .span9 {
+    width: 74.30939227%;
+    *width: 74.25620078%;
+  }
+
+  .row-fluid .span8 {
+    width: 65.74585635%;
+    *width: 65.69266486%;
+  }
+
+  .row-fluid .span7 {
+    width: 57.18232044%;
+    *width: 57.12912895%;
+  }
+
+  .row-fluid .span6 {
+    width: 48.61878453%;
+    *width: 48.56559304%;
+  }
+
+  .row-fluid .span5 {
+    width: 40.05524862%;
+    *width: 40.00205713%;
+  }
+
+  .row-fluid .span4 {
+    width: 31.49171271%;
+    *width: 31.43852122%;
+  }
+
+  .row-fluid .span3 {
+    width: 22.9281768%;
+    *width: 22.87498531%;
+  }
+
+  .row-fluid .span2 {
+    width: 14.36464088%;
+    *width: 14.31144939%;
+  }
+
+  .row-fluid .span1 {
+    width: 5.80110497%;
+    *width: 5.74791348%;
+  }
+
+  .row-fluid .offset12 {
+    margin-left: 105.52486188%;
+    *margin-left: 105.4184789%;
+  }
+
+  .row-fluid .offset12:first-child {
+    margin-left: 102.76243094%;
+    *margin-left: 102.65604796%;
+  }
+
+  .row-fluid .offset11 {
+    margin-left: 96.96132597%;
+    *margin-left: 96.85494299%;
+  }
+
+  .row-fluid .offset11:first-child {
+    margin-left: 94.19889503%;
+    *margin-left: 94.09251205%;
+  }
+
+  .row-fluid .offset10 {
+    margin-left: 88.39779006%;
+    *margin-left: 88.29140708%;
+  }
+
+  .row-fluid .offset10:first-child {
+    margin-left: 85.63535912%;
+    *margin-left: 85.52897614%;
+  }
+
+  .row-fluid .offset9 {
+    margin-left: 79.83425414%;
+    *margin-left: 79.72787116%;
+  }
+
+  .row-fluid .offset9:first-child {
+    margin-left: 77.0718232%;
+    *margin-left: 76.96544023%;
+  }
+
+  .row-fluid .offset8 {
+    margin-left: 71.27071823%;
+    *margin-left: 71.16433525%;
+  }
+
+  .row-fluid .offset8:first-child {
+    margin-left: 68.50828729%;
+    *margin-left: 68.40190431%;
+  }
+
+  .row-fluid .offset7 {
+    margin-left: 62.70718232%;
+    *margin-left: 62.60079934%;
+  }
+
+  .row-fluid .offset7:first-child {
+    margin-left: 59.94475138%;
+    *margin-left: 59.8383684%;
+  }
+
+  .row-fluid .offset6 {
+    margin-left: 54.14364641%;
+    *margin-left: 54.03726343%;
+  }
+
+  .row-fluid .offset6:first-child {
+    margin-left: 51.38121547%;
+    *margin-left: 51.27483249%;
+  }
+
+  .row-fluid .offset5 {
+    margin-left: 45.5801105%;
+    *margin-left: 45.47372752%;
+  }
+
+  .row-fluid .offset5:first-child {
+    margin-left: 42.81767956%;
+    *margin-left: 42.71129658%;
+  }
+
+  .row-fluid .offset4 {
+    margin-left: 37.01657459%;
+    *margin-left: 36.91019161%;
+  }
+
+  .row-fluid .offset4:first-child {
+    margin-left: 34.25414365%;
+    *margin-left: 34.14776067%;
+  }
+
+  .row-fluid .offset3 {
+    margin-left: 28.45303867%;
+    *margin-left: 28.3466557%;
+  }
+
+  .row-fluid .offset3:first-child {
+    margin-left: 25.69060773%;
+    *margin-left: 25.58422476%;
+  }
+
+  .row-fluid .offset2 {
+    margin-left: 19.88950276%;
+    *margin-left: 19.78311978%;
+  }
+
+  .row-fluid .offset2:first-child {
+    margin-left: 17.12707182%;
+    *margin-left: 17.02068884%;
+  }
+
+  .row-fluid .offset1 {
+    margin-left: 11.32596685%;
+    *margin-left: 11.21958387%;
+  }
+
+  .row-fluid .offset1:first-child {
+    margin-left: 8.56353591%;
+    *margin-left: 8.45715293%;
+  }
+
+  input,
+  textarea,
+  .uneditable-input {
+    margin-left: 0;
+  }
+
+  .controls-row [class*="span"] + [class*="span"] {
+    margin-left: 20px;
+  }
+
+  input.span12,
+  textarea.span12,
+  .uneditable-input.span12 {
+    width: 710px;
+  }
+
+  input.span11,
+  textarea.span11,
+  .uneditable-input.span11 {
+    width: 648px;
+  }
+
+  input.span10,
+  textarea.span10,
+  .uneditable-input.span10 {
+    width: 586px;
+  }
+
+  input.span9,
+  textarea.span9,
+  .uneditable-input.span9 {
+    width: 524px;
+  }
+
+  input.span8,
+  textarea.span8,
+  .uneditable-input.span8 {
+    width: 462px;
+  }
+
+  input.span7,
+  textarea.span7,
+  .uneditable-input.span7 {
+    width: 400px;
+  }
+
+  input.span6,
+  textarea.span6,
+  .uneditable-input.span6 {
+    width: 338px;
+  }
+
+  input.span5,
+  textarea.span5,
+  .uneditable-input.span5 {
+    width: 276px;
+  }
+
+  input.span4,
+  textarea.span4,
+  .uneditable-input.span4 {
+    width: 214px;
+  }
+
+  input.span3,
+  textarea.span3,
+  .uneditable-input.span3 {
+    width: 152px;
+  }
+
+  input.span2,
+  textarea.span2,
+  .uneditable-input.span2 {
+    width: 90px;
+  }
+
+  input.span1,
+  textarea.span1,
+  .uneditable-input.span1 {
+    width: 28px;
+  }
+}
+@media (max-width: 767px) {
+  .navbar-fixed-top,
+  .navbar-fixed-bottom,
+  .navbar-static-top {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  .container-fluid {
+    padding: 0;
+  }
+
+  .dl-horizontal dt {
+    float: none;
+    clear: none;
+    width: auto;
+    text-align: left;
+  }
+
+  .dl-horizontal dd {
+    margin-left: 0;
+  }
+
+  .container {
+    width: 320px;
+  }
+
+  .row-fluid {
+    width: 100%;
+  }
+
+  .row,
+  .thumbnails {
+    margin-left: 0;
+  }
+
+  .thumbnails > li {
+    float: none;
+    margin-left: 0;
+  }
+
+  [class*="span"],
+  .uneditable-input[class*="span"],
+  .row-fluid [class*="span"] {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    box-sizing: border-box;
+  }
+
+  .span12,
+  .row-fluid .span12 {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .row-fluid [class*="offset"]:first-child {
+    margin-left: 0;
+  }
+
+  .input-large,
+  .input-xlarge,
+  .input-xxlarge,
+  input[class*="span"],
+  select[class*="span"],
+  textarea[class*="span"],
+  .uneditable-input {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    box-sizing: border-box;
+  }
+
+  .input-prepend input,
+  .input-append input,
+  .input-prepend input[class*="span"],
+  .input-append input[class*="span"] {
+    display: inline-block;
+    width: auto;
+  }
+
+  .controls-row [class*="span"] + [class*="span"] {
+    margin-left: 0;
+  }
+
+  .modal {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    width: auto;
+    margin: 0;
+  }
+
+  .modal.fade {
+    top: -100px;
+  }
+
+  .modal.fade.in {
+    top: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .nav-collapse {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+
+  .page-header h1 small {
+    display: block;
+    line-height: 20px;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    border: 1px solid #ccc;
+  }
+
+  .form-horizontal .control-label {
+    float: none;
+    width: auto;
+    padding-top: 0;
+    text-align: left;
+  }
+
+  .form-horizontal .controls {
+    margin-left: 0;
+  }
+
+  .form-horizontal .control-list {
+    padding-top: 0;
+  }
+
+  .form-horizontal .form-actions {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .media .pull-left,
+  .media .pull-right {
+    float: none;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .media-object {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .modal {
+    top: 10px;
+    left: 10px;
+    right: 10px;
+  }
+
+  .modal-header .close {
+    padding: 10px;
+    margin: -10px;
+  }
+
+  .carousel-caption {
+    position: static;
+  }
+}
+@media (max-width: 979px) {
+  body {
+    padding-top: 0;
+  }
+
+  .navbar-fixed-top,
+  .navbar-fixed-bottom {
+    position: static;
+  }
+
+  .navbar-fixed-top {
+    margin-bottom: 20px;
+  }
+
+  .navbar-fixed-bottom {
+    margin-top: 20px;
+  }
+
+  .navbar-fixed-top .navbar-inner,
+  .navbar-fixed-bottom .navbar-inner {
+    padding: 5px;
+  }
+
+  .navbar .container {
+    width: auto;
+    padding: 0;
+  }
+
+  .navbar .brand {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 0 0 -5px;
+  }
+
+  .nav-collapse {
+    clear: both;
+  }
+
+  .nav-collapse .nav {
+    float: none;
+    margin: 0 0 10px;
+  }
+
+  .nav-collapse .nav > li {
+    float: none;
+  }
+
+  .nav-collapse .nav > li > a {
+    margin-bottom: 2px;
+  }
+
+  .nav-collapse .nav > .divider-vertical {
+    display: none;
+  }
+
+  .nav-collapse .nav .nav-header {
+    color: #777777;
+    text-shadow: none;
+  }
+
+  .nav-collapse .nav > li > a,
+  .nav-collapse .dropdown-menu a {
+    padding: 9px 15px;
+    font-weight: bold;
+    color: #777777;
+    border-radius: 3px;
+  }
+
+  .nav-collapse .btn {
+    padding: 4px 10px 4px;
+    font-weight: normal;
+    border-radius: 4px;
+  }
+
+  .nav-collapse .dropdown-menu li + li a {
+    margin-bottom: 2px;
+  }
+
+  .nav-collapse .nav > li > a:hover,
+  .nav-collapse .nav > li > a:focus,
+  .nav-collapse .dropdown-menu a:hover,
+  .nav-collapse .dropdown-menu a:focus {
+    background-color: #f2f2f2;
+  }
+
+  .navbar-inverse .nav-collapse .nav > li > a,
+  .navbar-inverse .nav-collapse .dropdown-menu a {
+    color: #999999;
+  }
+
+  .navbar-inverse .nav-collapse .nav > li > a:hover,
+  .navbar-inverse .nav-collapse .nav > li > a:focus,
+  .navbar-inverse .nav-collapse .dropdown-menu a:hover,
+  .navbar-inverse .nav-collapse .dropdown-menu a:focus {
+    background-color: #111111;
+  }
+
+  .nav-collapse.in .btn-group {
+    margin-top: 5px;
+    padding: 0;
+  }
+
+  .nav-collapse .dropdown-menu {
+    position: static;
+    top: auto;
+    left: auto;
+    float: none;
+    display: none;
+    max-width: none;
+    margin: 0 15px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    -o-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .nav-collapse .open > .dropdown-menu {
+    display: block;
+  }
+
+  .nav-collapse .dropdown-menu:before,
+  .nav-collapse .dropdown-menu:after {
+    display: none;
+  }
+
+  .nav-collapse .dropdown-menu .divider {
+    display: none;
+  }
+
+  .nav-collapse .nav > li > .dropdown-menu:before,
+  .nav-collapse .nav > li > .dropdown-menu:after {
+    display: none;
+  }
+
+  .nav-collapse .navbar-form,
+  .nav-collapse .navbar-search {
+    float: none;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar-inverse .nav-collapse .navbar-form,
+  .navbar-inverse .nav-collapse .navbar-search {
+    border-top-color: #111111;
+    border-bottom-color: #111111;
+  }
+
+  .navbar .nav-collapse .nav.pull-right {
+    float: none;
+    margin-left: 0;
+  }
+
+  .nav-collapse,
+  .nav-collapse.collapse {
+    overflow: hidden;
+    height: 0;
+  }
+
+  .navbar .btn-navbar {
+    display: block;
+  }
+
+  .navbar-static .navbar-inner {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (min-width: 980px) {
+  .nav-collapse.collapse {
+    height: auto !important;
+    overflow: visible !important;
+  }
+}
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.affix {
+  position: fixed;
+}
+
+/* Global */
+/* Residential */
+/* Business */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: #666666;
+  font-family: "HelveticaNeueW01-55Roma", Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+a {
+  color: #065180;
+}
+
+.print-body a[href]:after,
+.print-body abbr[title]:after {
+  display: none;
+}
+
+@media print {
+  a[href]:after,
+  abbr[title]:after {
+    display: none;
+  }
+}
+h1 {
+  color: #333333;
+  font-family: "Futura W01 Medium", sans-serif;
+  font-size: 50px;
+  line-height: 60px;
+}
+
 /* ==========================================================================
    Footer
    ========================================================================== */
 #footer {
   clear: both;
+}
+
+#footer a {
+  text-decoration: none;
+}
+
+#footer li {
+  line-height: 20px;
+}
+
+.footer-social {
+  border-top: 1px solid #bbbbbb;
+  -o-box-shadow: 0 -3px 5px #bbbbbb;
+  box-shadow: 0 -3px 5px #bbbbbb;
+  clear: both;
+  height: 104px;
+  position: relative;
+}
+
+.no-boxshadow .footer-social:before {
+  background: url("/assets/images/global//backgrounds/footer-social-shadow.png") repeat-x;
+  bottom: 100%;
+  content: "";
+  height: 8px;
+  position: absolute;
+  width: 100%;
+}
+
+.print-body .footer-social {
+  display: none;
+}
+
+@media print {
+  .footer-social {
+    display: none;
+  }
+}
+.footer-social__inner {
+  padding-top: 25px;
 }
 
 article {
@@ -869,8 +3108,8 @@ article {
   top: 9px;
   border-left: 70px solid transparent;
   border-bottom: 70px solid transparent;
-  border-top: 70px solid #67bd45;
-  z-index: 99;
+  border-top: 70px solid #50b948;
+  /*	z-index: 99; */
 }
 
 .star {
@@ -879,7 +3118,7 @@ article {
   top: 19px;
   color: white;
   font-size: 1.25em;
-  z-index: 99;
+  /*	z-index: 99; */
 }
 
 .social-sharing {
@@ -890,21 +3129,21 @@ article {
 .social-sharing i {
   height: 1.95em;
   font-size: 1em;
-  background-color: #67bd45;
+  background-color: #50b948;
   color: white;
   cursor: pointer;
   padding: .4em;
   width: 2em;
   text-align: center;
-  border: 3px solid #67bd45;
+  border: 3px solid #50b948;
   -webkit-transition: .1s ease-in-out all;
           transition: .1s ease-in-out all;
 }
 
 .social-sharing i:hover {
-  border: 3px solid #67bd45;
+  border: 3px solid #50b948;
   background-color: white;
-  color: #67bd45;
+  color: #50b948;
 }
 
 .bigDate {
@@ -917,7 +3156,8 @@ article {
   margin-top: .8em;
 }
 .bigDate .day {
-  padding-top: .1em;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: #111;
   background-color: white;
   font-size: 2.1em;
@@ -943,7 +3183,7 @@ article {
 
 button, input[type="submit"] {
   padding: .5em;
-  background-color: #67bd45;
+  background-color: #50b948;
   color: white;
   border: none;
   padding-left: 1.3em;
@@ -954,6 +3194,10 @@ input[type="search"] {
   padding: .4em;
   width: 57%;
   margin-right: 0.35em;
+}
+
+#news {
+  color: #333333;
 }
 
 #left {
@@ -978,71 +3222,22 @@ input[type="search"] {
   background-color: white;
 }
 
-#energy-header, #footer {
-  width: 983px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-article .figure {
-  height: 250px;
-  background-position: center center;
-  background-size: cover;
-}
-
-#news .article-left {
-  display: inline-block;
-  width: 40%;
-  position: relative;
-  float: left;
-}
-#news .article-left .star {
-  right: 10px;
-  top: 10px;
-}
-#news .article-left .triangle {
-  right: 0;
-  top: 0;
-}
-#news .article-left .figure {
-  height: 200px;
-}
-
-#news .article-right {
-  display: inline-block;
-  width: 59%;
-  float: left;
-  padding-left: 15px;
-}
-#news .article-right .entry-header h2 {
-  margin-top: 0;
-}
-
 #news .navigation {
-  padding-bottom: 12px;
+  padding-bottom: 27px;
   margin-top: 25px;
   text-align: center;
 }
 #news .navigation span {
   background: #fff;
-  color: #67bd45;
-  border: 2px solid #67bd45;
+  color: #50b948;
+  border: 2px solid #50b948;
   padding: 7px 10px 10px 10px;
 }
 #news .navigation a {
-  background-color: #67bd45;
+  background-color: #50b948;
   color: #fff;
   padding: 7px 10px 10px 10px;
   border: 2px solid #67bd45;
-}
-
-#footer a {
-  color: #1e61ab;
-  text-decoration: none;
-}
-
-body {
-  margin: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */
