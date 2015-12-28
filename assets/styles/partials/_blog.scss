@@ -91,6 +91,15 @@ article .figure {
     background-size: cover;
 }
 
+#news {
+    background-image: url('http://www.ci-inc.com/wp-content/themes/computerinsights/images/footer-bg-squares.jpg');
+    background-position: bottom left;
+    background-repeat: repeat-x;
+    border: 1px solid #585858;
+    padding: 10px;
+
+}
+
 #news .article-left {
   display: inline-block;
   width: 40%;

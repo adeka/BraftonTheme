@@ -49,11 +49,11 @@
 .archive #breadcrumbs > span > span > a:after, .single #breadcrumbs > span > span > a:after, .index #breadcrumbs > span:after{
 		content:"";
 		position: absolute;
-		right: -5px;
+		right: -3px;
 		top: 2px;
-		border-left: 28px solid transparent;
-		border-bottom: 28px solid transparent;
-		border-top: 28px solid $mainColor;
+		border-left: 25px solid transparent;
+		border-bottom: 25px solid transparent;
+		border-top: 25px solid $mainColor;
 		transform: rotate(45deg);
 		margin-left: 0;
 }

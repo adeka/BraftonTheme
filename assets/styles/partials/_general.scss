@@ -1,6 +1,7 @@
 html {}
 body {
 	background-color: $body-background-color;
+  margin: 8px;
 }
 
 p {
@@ -77,7 +78,7 @@ address {
 	margin: 0 auto;
 }
 
-@media screen and (max-device-width: 1000px) {
+@media screen and (max-width: 1000px) {
   #left, #news {
     width: 100% !important;
   }
@@ -89,7 +90,7 @@ address {
   }
 }
 
-@media screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px) {
   #news .article-left, #news .article-right {
     width: 100%;
   }

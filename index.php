@@ -108,5 +108,8 @@
 
 
 <?php get_sidebar(); ?>
+
+<div id="ci-body-footer-left"><a href="http://www.ci-inc.com/" title="The Business Edge - Fastener Software"><img src="http://www.ci-inc.com/wp-content/themes/computerinsights/images/tbe-footer-logo.png" border="0" alt="The Business Edge - Fastener Software" data-pin-nopin="true"></a></div>
+
 </section><!-- End #news -->
 <?php get_footer(); ?>

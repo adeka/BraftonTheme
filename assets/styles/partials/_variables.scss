@@ -1,5 +1,5 @@
    //$mainColor : #3399FF; //baby blue
-   $mainColor : rgb(80,185,72);
+   $mainColor : #4182c3;
    //$mainColor : #FFCC66; //light gold
    //$mainColor : #CC3300; //rusty
    //$mainColor : #003366; //navy
@@ -16,13 +16,13 @@
    $body-background-color: white;
    $news-background-color: white;
    /*Sizing--*/
-   $news-width: 983px;
+   $news-width: 847px;
    $news-overflow: hidden;
    /*Font--*/
-   $font-family: 'Rosario', sans-serif;
+   $font-family: 'PT Sans', sans-serif, verdana, arial, helvetica;
    $font-color: #000;
    //this affects all font sizes globally, since they all use EM, its relative scaling
-   $font-size: 18px;
+   $font-size: 16px;
    $header-font-family: $font-family;
    /*Links--*/
    $link-color: #333333;

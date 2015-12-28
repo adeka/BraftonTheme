@@ -3,7 +3,7 @@
     color: #333333;
   }
 	#news{
-		overflow: visible;
+	//	overflow: visible;
 		position: relative;
 	}
 	.post-categories{
@@ -43,9 +43,10 @@
 			margin-bottom: .5em;
 		}
 		position: absolute;
-		left: -35px;
-    top: 4px;
+		left: 8px;
+    top: 3px;
 		width: 50px;
+    z-index: 9;
 	}
 	.figure{
     margin-bottom: .3em;
